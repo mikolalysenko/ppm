@@ -1,0 +1,33 @@
+{
+  "name": "ppm",
+  "version": "0.0.0",
+  "description": "A simple streaming ascii PPM image parser/writer",
+  "main": "ppm.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "through": "~2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/ppm.git"
+  },
+  "keywords": [
+    "ppm",
+    "image",
+    "file",
+    "save",
+    "read",
+    "write",
+    "stream"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "05d913e44f647d9bcdf436e9ecad896bd6e397c8"
+}
