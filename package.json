@@ -9,7 +9,9 @@
   "dependencies": {
     "through": "~2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "^4.5.1"
+  },
   "scripts": {
     "test": "node test/test.js"
   },

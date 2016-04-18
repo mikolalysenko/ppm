@@ -26,11 +26,18 @@ The API is streaming, and should be compatible with all the stand node.js featur
 
 `ppm.parse(stream, cb(err, result))`
 ------------------------------------
-Parses an ASCII ppm file from the stream.  When finished, calls result with the error/result of parsing the file.
+Parses an ASCII ppm file from `stream`.  When finished, calls `cb` with the
+error and result of parsing the file. `result` will be an array of arrays of the
+form
+
+```js
+    [[r, g, b], [r, g, b], ...]
+```
 
 `ppm.serialize(image)`
 ----------------------
-Converts an image into an ASCII ppm stream
+Converts an array of arrays (RGB data; see above fo rformat) representing an
+image into an ASCII ppm stream.
 
 
 Credits
