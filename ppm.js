@@ -118,6 +118,7 @@ tok_loop:
         }
         this.next(cur);
         if(this.get(cur) !== 51) {
+          this.onerror(new Error('unsupported format: P' + String.fromCharCode(this.get(cur))))
           return;
         }
         this.ontoken(TOKEN_TYPE.HEADER);
